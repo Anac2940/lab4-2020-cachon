@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
     <body>
-        <h2>OFERTAS</h2>
-        <table border = 1>
-            <thead>
-                <tr><th>Nombre</th><th>Descripción</th><th>Precio</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Manzana verde</td><td>Manzana que no maduró</td><td>$10.00</td></tr>
-                <tr><td>Manzana roja</td><td>Descripción 2</td><td>Precio 2</td></tr>
-                <tr><td>Manzana negra</td><td>Descripción 3</td><td>Precio 3</td></tr>
-            </tbody>
-        </table>
-        <br><br>
-        <p>
-            <a href="index.html">Volver al inicio</a>
-        </p>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Verduleria CaCh0n</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Volver al inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+            </div>
+        </nav>
+        <!--Navbar-->
+
+        <h2 class="text-center">OFERTAS</h2>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Manzana verde</th>
+                            <td>Manzana que no maduró</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Manzana roja</th>
+                            <td>Manzana lista</td>
+                            <td>$15.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Manzana negra</th>
+                            <td>Manzana podrida</td>
+                            <td>$5.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
     </body>
 </html>
